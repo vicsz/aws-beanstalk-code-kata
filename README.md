@@ -46,7 +46,8 @@ Use a public GitHub instance, and a Free Tier AWS instance. Remember to cleanup 
    - **Hint:**  Use GitHub Secrets to store sensitive credentials (e.g., AWS keys).
 
 7. **Logging with AWS CloudWatch**
-   - Ensure your application sends application logs to AWS CloudWatch.
+   - Add somet logging to your application. 
+   - Ensure your application sends application logs to AWS CloudWatch (and that you can view and search for them). 
 
 8. **Error Handling and Alerting**
    - Add an endpoint (e.g., `/cause_error`) that triggers an error log.
