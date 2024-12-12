@@ -70,10 +70,13 @@ Create a fully automated deployment pipeline for a simple "Hello World" web appl
 2. **Health Checks**
    - Add a dedicated `/health` endpoint to your application.
    - Configure Beanstalk to use this endpoint for health monitoring.
+   - Understand what happens if the hardware, JDK, OS, or the application itself fails (i.e., the health check fails).
+   - Investigate Elastic Beanstalk's self-healing capabilities and how it replaces unhealthy instances to maintain availability.
 
 3. **Blue/Green Deployment**
-   - Enable and test Blue/Green deployment to minimize downtime during updates.
-   - Understand and configure connection draining.
+   - Enable and test Blue/Green Zero-down time deployment to minimize downtime during updates.
+   - **Hint**: See Swap Environment URL functionality. 
+   - Understand and configure connection draining. What happens if I do a Blue/Green deploy, and there's an existing longer running connection to the previous version ? 
 
 4. **Elastic Beanstalk Configuration**
    - Create a `.ebextensions` configuration file to customize your environment.
@@ -86,8 +89,8 @@ Create a fully automated deployment pipeline for a simple "Hello World" web appl
    - Update your application to interact with the datastore (e.g., displaying data from the database or retrieving files from S3).
 
 6. **Advanced Elastic Beanstalk Features**
+   - Access an instance directly using AWS Session Manager to troubleshoot.
    - Enable and use AWS X-Ray for distributed tracing.
-   - Access an instance using AWS Session Manager to troubleshoot.
    - Experiment with different Elastic Beanstalk deployment types (e.g., rolling, immutable).
 
 7. **Infrastructure as Code**
