@@ -7,6 +7,8 @@ Create a fully automated deployment pipeline for a simple "Hello World" web appl
 
 Make sure to commit code frequently and atleast daily. 
 
+Use a public GitHub instance, and a Free Tier AWS instance. Remember to cleanup (delete) your AWS resources after. 
+
 ---
 
 ## Exercise Steps
