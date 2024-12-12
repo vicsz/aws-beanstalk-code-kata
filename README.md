@@ -5,6 +5,8 @@
 ## Objective
 Create a fully automated deployment pipeline for a simple "Hello World" web application using Amazon Elastic Beanstalk, GitHub Actions, and AWS CloudWatch. This project will teach you about CI/CD, semantic versioning, monitoring, and alerting.
 
+Make sure to commit code frequently and atleast daily. 
+
 ---
 
 ## Exercise Steps
