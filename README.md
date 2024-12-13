@@ -24,17 +24,16 @@ Use a public GitHub instance, and a Free Tier AWS instance. Remember to cleanup 
      - Or be accessible via a `/version` endpoint.
 
 2. **Set Up GitHub Repository**
-   - Create a public GitHub repository.
+   - Create a public GitHub repository for your app and commit it. 
    - Frequently commit and push code changes (at least daily).
    - Use `.gitignore` to exclude sensitive files and unnecessary clutter.
 
 3. **GitHub Actions: Build**
    - Set up a GitHub Actions workflow that automatically builds the application upon every commit to the `master` branch.
-   - Use GitHub environment variables (e.g., build number) to assist with tasks like semantic versioning.
 
 4. **Add Semantic Versioning**
    - Implement a build script to generate a semantic version (e.g., `v1.0.1`).
-   - Increment the version automatically with each new commit.
+   - Increment the build version automatically with each new commit.
      - **Hint:** Look into GitHub environment variables (including the build number) to help with versioning.
 
 5. **Manual Deployment to AWS Elastic Beanstalk**
@@ -46,7 +45,7 @@ Use a public GitHub instance, and a Free Tier AWS instance. Remember to cleanup 
    - **Hint:**  Use GitHub Secrets to store sensitive credentials (e.g., AWS keys).
 
 7. **Logging with AWS CloudWatch**
-   - Add somet logging to your application. 
+   - Add some application logging to your application. 
    - Ensure your application sends application logs to AWS CloudWatch (and that you can view and search for them). 
 
 8. **Error Handling and Alerting**
